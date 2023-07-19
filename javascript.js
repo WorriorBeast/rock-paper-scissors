@@ -1,11 +1,16 @@
 function getComputerChoice() {
-    let compDecision = Math.floor(Math.random() * 3);
+    let computerSelection = Math.floor(Math.random() * 3);
 
-    if (compDecision < 1) {
-        return compDecision = 'Rock';
-    } else if (compDecision >= 1 && compDecision < 2){
-        return compDecision = 'Paper';
+    if (computerSelection < 1) {
+        return computerSelection = 'rock';
+
+    } else if (computerSelection >= 1 && computerSelection < 2){
+        return computerSelection = 'paper';
+
     } else {
-        return compDecision = 'Scissor';
+        return computerSelection = 'scissor';
     }
-}
+}    
+
+    let playerSelection = prompt('What will you choose: rock, paper, or scissors?', '').toLowerCase();
+    
