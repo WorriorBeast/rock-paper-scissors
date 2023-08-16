@@ -1,10 +1,10 @@
-let computerChoice = Math.floor(Math.random() * 3);
+let randomNum = Math.floor(Math.random() * 3);
 
-function getComputerChoice(computerChoice) {
-    if (computerChoice === 0) {
+function getComputerChoice(randomNum) {
+    if (randomNum === 0) {
         return 'rock';
 
-    } else if (computerChoice === 1) {
+    } else if (randomNum === 1) {
         return 'paper';
   
     } else {
@@ -12,7 +12,7 @@ function getComputerChoice(computerChoice) {
     }
 }
 
-let computerSelection = getComputerChoice(computerChoice);
+let computerSelection = getComputerChoice(randomNum);
 
 let playerSelection = '';
 
