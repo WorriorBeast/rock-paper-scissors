@@ -1,10 +1,10 @@
-let randomNum = Math.floor(Math.random() * 3);
+let randomNum = Math.floor(Math.random() * 3) + 1;
 
 function getComputerChoice(randomNum) {
-    if (randomNum === 0) {
+    if (randomNum === 1) {
         return 'rock';
 
-    } else if (randomNum === 1) {
+    } else if (randomNum === 2) {
         return 'paper';
   
     } else {
