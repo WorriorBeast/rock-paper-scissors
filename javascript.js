@@ -56,9 +56,17 @@ function game() {
     for (i = 0; playerWinner + computerWinner + tie < 5; i++) {
         let randomNum = Math.floor(Math.random() * 3) + 1;
         let computerSelection = getComputerChoice(randomNum);
-        
+
         getComputerChoice(randomNum);
         playRound(playerSelection, computerSelection);
+    }
+    if (playerWinner > computerWinner) {
+        return alert(`You\'re the game winner!\nYou: ${playerWinner}\nComputer: ${computerWinner}\nTie(s): ${tie}`);
+
+    } else if (playerWinner < computerWinner) {
+        return alert(`You're the game loser!\nYou: ${playerWinner})\nComputer: ${computerWinner}\nTie(s): ${tie}`);
+    } else {
+        return alert(`It's a tie! Both you and the computer won ${playerWinner} rounds\nTie(s): ${tie}`);
     }
 }
 game();
