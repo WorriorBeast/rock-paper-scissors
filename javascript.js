@@ -1,5 +1,3 @@
-let randomNum = Math.floor(Math.random() * 3) + 1;
-
 function getComputerChoice(randomNum) {
     if (randomNum === 1) {
         return 'rock';
@@ -11,8 +9,6 @@ function getComputerChoice(randomNum) {
         return 'scissor';
     }
 }
-
-let computerSelection = getComputerChoice(randomNum);
 
 let playerSelection = '';
 let playerWinner = 0,
@@ -64,7 +60,7 @@ function game() {
         return alert(`You\'re the game winner!\nYou: ${playerWinner}\nComputer: ${computerWinner}\nTie(s): ${tie}`);
 
     } else if (playerWinner < computerWinner) {
-        return alert(`You're the game loser!\nYou: ${playerWinner})\nComputer: ${computerWinner}\nTie(s): ${tie}`);
+        return alert(`You're the game loser!\nYou: ${playerWinner}\nComputer: ${computerWinner}\nTie(s): ${tie}`);
     } else {
         return alert(`It's a tie! Both you and the computer won ${playerWinner} rounds\nTie(s): ${tie}`);
     }
